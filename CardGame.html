@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="CSS/CardGame.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="heading">Sam's Card Matching Game</h1>
+          <div id="timeContain"><p id="timer">Time: 0:00 </p></div>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+
+        	Moves: <span class="moves"></span>
+
+            <div id="reset" class="restart">
+        		<i class="fa fa-repeat"><span></span></i>
+        	</div>
+        </section>
+
+        <ul class="deck"></ul>
+    </div>
+
+
+    <div class="modal">
+        <div id="modalText" class="modal-content">
+            <h1 id="look">Let's look at your score!</h1>
+          <span id="timeCurrent">Time: 0</span>
+
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+          <span id="score"></span></br></br>
+          <span id="thinking"></span></br></br>
+          <button id="button"> Play Again? </button>
+        </div>
+    </div>
+
+    <script src="JS/CardGame.js"></script>
+</body>
+</html>
